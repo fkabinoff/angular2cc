@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div [class.dark-theme]="isDarkTheme">
+  <md-toolbar color="primary">
+    <span>
+      Angular2cc
+    </span>
+    <button md-icon-button [md-menu-trigger-for]="menu">
+      <md-icon>more_vert</md-icon>
+    </button>
+  </md-toolbar>
+  <md-menu x-position="before" #menu="mdMenu">
+    <button md-menu-item (click)="isDarkTheme=!isDarkTheme">Toggle theme</button>
+  </md-menu>
+</div>
