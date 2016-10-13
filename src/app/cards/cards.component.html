@@ -1,3 +1,9 @@
-<p>
-  cards works!
-</p>
+<header>
+  <h1>Choose Higher or Lower</h1>
+  <button (click)="play('1')" [hidden]="result" [disabled]="!gameIsReady">Higher</button>
+  <button (click)="play('0')" [hidden]="result" [disabled]="!gameIsReady">Lower</button>
+  <button (click)="reset()" [hidden]="!result">Try again</button>
+  <img [src]="dealerCard.image" *ngIf="dealerCard">
+  <img [src]="playerCard.image" *ngIf="playerCard" [hidden]="!result">
+  <div>{{result}}</div>
+</header>
