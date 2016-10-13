@@ -28,7 +28,7 @@ export class CardsComponent implements OnInit {
     });
   }
 
-  play(choice) {
+  play(playerGuessHigher: boolean) {
     this.gameIsReady = false;
     let faceCards = {
       "JACK": 11,
@@ -39,7 +39,7 @@ export class CardsComponent implements OnInit {
     let dealerCardValue = faceCards[this.dealerCard.value] || Number(this.dealerCard.value);
     let playerCardValue = faceCards[this.playerCard.value] || Number(this.playerCard.value);
     let playerCardHigher = playerCardValue > dealerCardValue;
-    if(choice == playerCardHigher) {
+    if(playerGuessHigher == playerCardHigher) {
       this.result = "You Win!";
     } else {
       this.result = "Better Luck Next Time";

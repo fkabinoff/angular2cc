@@ -4,10 +4,10 @@
   </div>
   <div class="row">
     <div class="column" [class.hidden]="result">
-      <button md-raised-button color="primary" [disabled]="!gameIsReady" (click)="play('1')">Higher</button>
+      <button md-raised-button color="primary" [disabled]="!gameIsReady" (click)="play(true)">Higher</button>
     </div>
     <div class="column" [class.hidden]="result">
-      <button md-raised-button color="primary" [disabled]="!gameIsReady" (click)="play('0')">Lower</button>
+      <button md-raised-button color="primary" [disabled]="!gameIsReady" (click)="play(false)">Lower</button>
     </div>
     <div class="column" [class.hidden]="!result" >
       <button md-raised-button color="accent" (click)="reset()">Try again</button>
