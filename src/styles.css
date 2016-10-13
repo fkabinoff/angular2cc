@@ -9,3 +9,19 @@ body {
 md-toolbar-row {
     justify-content: space-between;
 }
+
+.hidden {
+    display: none !important;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
