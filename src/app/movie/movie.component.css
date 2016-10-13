@@ -1,0 +1,12 @@
+h1, h2 {
+    margin-bottom: 0.1675em;
+}
+p {
+  margin-top: 0.1675em;
+}
+.tagline {
+  font-style: italic;
+}
+img, a {
+  width: 100%;
+}
