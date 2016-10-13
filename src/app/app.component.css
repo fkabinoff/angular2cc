@@ -1,0 +1,15 @@
+.title {
+    cursor: default;
+    margin-right: 0.33em;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 0.33em;
+    color: lightyellow;
+}
+
+a.active {
+    color: yellow;
+}

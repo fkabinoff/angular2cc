@@ -1,7 +1,9 @@
 <div [class.dark-theme]="isDarkTheme">
   <md-toolbar color="primary">
     <span>
-      Angular2cc
+      <span class="title">Angular2cc</span>
+      <a routerLink="/movie" routerLinkActive="active">Movie</a>
+      <a routerLink="/cards" routerLinkActive="active">Cards</a>
     </span>
     <button md-icon-button [md-menu-trigger-for]="menu">
       <md-icon>more_vert</md-icon>
