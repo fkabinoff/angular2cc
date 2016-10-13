@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     MaterialModule.forRoot(),
     RouterModule.forRoot([
-      { path: '', loadChildren: './movie/movie.module#MovieModule' },
+      { path: '', redirectTo: '/movie', pathMatch: 'full' },
       { path: 'movie', loadChildren: './movie/movie.module#MovieModule' },
       { path: 'cards', loadChildren: './cards/cards.module#CardsModule' }
     ])
