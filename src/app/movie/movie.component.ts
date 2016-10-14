@@ -10,8 +10,8 @@ import { MovieService } from './movie.service';
 })
 export class MovieComponent implements OnInit {
 
-  movie = {};
-  cast = [];
+  movie: any;
+  cast: Array<any>;
 
   constructor(private movieService: MovieService) { }
 
