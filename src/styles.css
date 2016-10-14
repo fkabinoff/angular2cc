@@ -13,15 +13,3 @@ md-toolbar-row {
 .hidden {
     display: none !important;
 }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.column {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}

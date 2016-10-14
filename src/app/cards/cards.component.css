@@ -1,3 +1,13 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
 header {
     margin-bottom: 2em;
 }
